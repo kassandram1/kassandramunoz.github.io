@@ -2,34 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kassandra Munoz | Portfolio Coming Soon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassandra Munoz | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #fefefe;
+            color: #333;
+        }
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav .logo {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: #2a9d8f;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #2a9d8f;
+        }
+        .hero {
+            background: url('your-photo.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            text-align: center;
+            padding: 0 2rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+        .btn {
+            padding: 0.75rem 1.5rem;
+            background: #2a9d8f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #21867a;
+        }
+        section {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .projects .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .project-item {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        .project-item:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background: #2a9d8f;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Kassandra Munoz</h1>
-        <p>Computer Science Student | Future Engineer | Building Human-Centered Technology</p>
-    </header>
 
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm Kassandra — a Computer Science major at the University of San Diego with a passion for sustainability, human-centered innovation, and accessible tech. Proud first-generation college graduate, Constance Carroll Trailblazer Scholarship Award recipient, and explorer of AI and integrated engineering.
-        </p>
+    <nav>
+        <div class="logo">Kassandra Munoz</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Hi, I'm Kassandra 🌊</h1>
+        <p>Computer Science Student | Future Engineer | Latina Innovator</p>
+        <a href="#projects" class="btn">View My Work</a>
     </section>
 
-    <section class="buttons">
-        <a href="#">View My Projects</a>
-        <a href="#">Download My Resume</a>
-        <a href="#">Contact Me</a>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I began my academic journey at community college, earning degrees in Mathematics and Pre-Engineering before transferring to the University of San Diego on a full-ride scholarship to pursue Computer Science. I'm passionate about building human-centered technology, advancing sustainability, and creating real-world impact through innovation.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Personal Website</h3>
+                <p>Built and designed this responsive personal portfolio to showcase my journey, projects, and future ambitions.</p>
+            </div>
+            <div class="project-item">
+                <h3>Upcoming: AI Mental Health Tracker</h3>
+                <p>A personal project focused on building a compassionate mental health tracking tool using machine learning and emotional analysis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Connect!</h2>
+        <p>I'm always excited to collaborate on meaningful tech projects or discuss new ideas. Feel free to reach out!</p>
+        <a href="mailto:munozkassandra1@gmail.com" class="btn">Email Me</a>
     </section>
 
     <footer>
-        <p>Connect with me:</p>
-        <a href="https://www.linkedin.com/in/kassandra-munoz-23a83232b/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/kassandram1" target="_blank">GitHub</a> |
-        <a href="mailto:kassandramunoz@sandiego.edu">Email</a>
+        <p>© 2025 Kassandra Munoz. Built with love and beach sunsets 🌴.</p>
     </footer>
+
 </body>
 </html>
